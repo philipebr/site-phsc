@@ -1,3 +1,21 @@
-<p>
-  experience works!
-</p>
+<ul class="list-group">
+  <li *ngFor="let experience of experiences" class="list-group-item">
+    
+    {{ experience.getPositionHeld() }}
+
+    <br>
+
+    {{ experience.getCompanyName() }}
+
+    <br>
+
+    {{ experience.getStartDate() }} - {{ experience.getEndDate() }}
+
+    <br>
+    
+    {{ experience.getDescription() }}
+
+    <br>
+
+  </li>
+</ul>
